@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Pizzaria Modelo</title>
+
+<style>
+
+body{
+font-family: Arial;
+margin:0;
+background:#111;
+color:white;
+}
+
+header{
+background:#c40000;
+padding:20px;
+text-align:center;
+font-size:28px;
+font-weight:bold;
+}
+
+.banner{
+background:url("https://images.unsplash.com/photo-1601924928376-9d6e0e6b4e23");
+background-size:cover;
+padding:120px;
+text-align:center;
+}
+
+.banner h1{
+font-size:50px;
+}
+
+.menu{
+padding:40px;
+text-align:center;
+}
+
+.pizzas{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:#222;
+padding:20px;
+border-radius:10px;
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+button{
+background:#ff0000;
+border:none;
+padding:10px;
+color:white;
+border-radius:5px;
+cursor:pointer;
+}
+
+footer{
+background:#000;
+text-align:center;
+padding:20px;
+margin-top:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+🍕 Pizzaria do João
+</header>
+
+<div class="banner">
+<h1>A Melhor Pizza da Cidade</h1>
+<p>Peça agora pelo WhatsApp</p>
+<button onclick="window.open('https://wa.me/5511999999999')">
+Pedir no WhatsApp
+</button>
+</div>
+
+<section class="menu">
+
+<h2>Nosso Cardápio</h2>
+
+<div class="pizzas">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65">
+<h3>Calabresa</h3>
+<p>Molho, mussarela e calabresa</p>
+<p><b>R$49,90</b></p>
+<button>Pedir</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1548365328-9f547fb0953c">
+<h3>Frango com Catupiry</h3>
+<p>Frango desfiado com catupiry</p>
+<p><b>R$55,90</b></p>
+<button>Pedir</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1604382355076-af4b0eb60143">
+<h3>Portuguesa</h3>
+<p>Presunto, ovo, cebola e queijo</p>
+<p><b>R$59,90</b></p>
+<button>Pedir</button>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+📱 WhatsApp: (11) 99999-9999  
+📷 Instagram: @pizzaria  
+
+</footer>
+
+</body>
+</html>
